@@ -14,6 +14,13 @@ class Solution:
         return l
 
 
+# more pythonic solution:
+
+# class Solution:
+#     def plusOne(self, digits):
+#         return list(map(int, str(int("".join(map(str, digits))) + 1)))
+
+
 test = Solution()
 digits = [1,2,3]
 print(test.plusOne(digits))
