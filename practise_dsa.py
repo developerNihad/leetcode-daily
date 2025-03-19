@@ -97,3 +97,17 @@ print(find_largest_number([243, 53, 245]))"""
 print(generate_fibonacci(1))
 print(generate_fibonacci(2))
 print(generate_fibonacci(5))"""
+
+
+# Second Largest Number
+
+def second_largest(numbers):
+
+    if len(numbers) < 2:
+        return None
+    
+    unique_sorted = sorted(set(numbers))
+
+    return unique_sorted[-2] if len(unique_sorted) >= 2 else None
+
+print(second_largest([5, 2, 9, 1, 7, 9]))
